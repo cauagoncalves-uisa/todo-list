@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.form-tarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#input-tarefa {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#input-tarefa:focus {
+    border-color: #667eea;
+}
+
+#botao-adicionar {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#botao-adicionar:hover {
+    background: #5568d3;
+}
+
+#lista-tarefas {
+    list-style: none;
+}
+
+#lista-tarefas li {
+    background: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#lista-tarefas li:hover {
+    background: #ebebeb;
+    transform: translateX(5px);
+}
+
+#lista-tarefas li.concluida {
+    background: #d4edda;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.botao-apagar {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.botao-apagar:hover {
+    background: #c0392b;
+}
+
+.texto-tarefa {
+    flex: 1;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
